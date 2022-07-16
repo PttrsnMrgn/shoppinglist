@@ -21,7 +21,8 @@ do
 {
     Console.Clear();
     Console.WriteLine("***********************");
-    Console.WriteLine("********WELCOME********");
+    Console.WriteLine("******WELCOME TO*******");
+    Console.WriteLine("*****MEAT N STUFF******");
     Console.WriteLine("\n");
     foreach (KeyValuePair<string, decimal> kvp in menu)
     {
@@ -31,8 +32,12 @@ do
     Console.WriteLine("***********************");
 
     Console.WriteLine("\nWHICH ITEM WOULD YOU LIKE?");
+    Console.WriteLine("\nENTER 'CANCEL' TO EXIT");
     string input = Console.ReadLine().ToUpper();
-
+    if (input == "CANCEL")
+    {
+        break;
+    }
     if (menu.ContainsKey(input))
     {
         cost1 = menu[input];
@@ -65,7 +70,9 @@ foreach (string i in shoppingList)
 
 Console.WriteLine($"\nTOTAL: ${total}");
 Console.WriteLine("\n******************************");
-Console.WriteLine("      HAVE A GREAT DAY!");
+Console.WriteLine("    THANKS FOR SHOPPING");
+Console.WriteLine("        MEAT N STUFF");
+Console.WriteLine("     HAVE A GREAT DAY!");
 Console.WriteLine("******************************");
 
 Console.ReadLine();
