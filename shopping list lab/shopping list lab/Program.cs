@@ -41,7 +41,6 @@ do
     if (menu.ContainsKey(input))
     {
         cost1 = menu[input];
-        Console.Clear();
         Console.WriteLine($"\nOK YOU'D LIKE {input},THE PRICE IS ${cost1}.");
         total = cost1 + total;
         shoppingList.Add(input);
@@ -65,10 +64,10 @@ Console.WriteLine("\n");
 
 foreach (string i in shoppingList)
 {
-    Console.WriteLine($"{i} - {menu[i]}");
+    Console.WriteLine($"   {i} - {menu[i]}");
 }
 
-Console.WriteLine($"\nTOTAL: ${total}");
+Console.WriteLine($"\n   TOTAL: ${total}");
 Console.WriteLine("\n******************************");
 Console.WriteLine("    THANKS FOR SHOPPING");
 Console.WriteLine("        MEAT N STUFF");
