@@ -25,7 +25,6 @@ do
     Console.WriteLine("     MEAT N STUFF");
     Console.WriteLine("***********************");
 
-    Console.WriteLine("\n");
     foreach (KeyValuePair<string, decimal> kvp in menu)
     {
         Console.WriteLine(kvp);
@@ -62,7 +61,6 @@ Console.Clear();
 Console.WriteLine("******************************");
 Console.WriteLine("HERE'S YOUR RECEIPT FOR REVIEW");
 Console.WriteLine("******************************");
-Console.WriteLine("\n");
 
 foreach (string i in shoppingList)
 {
