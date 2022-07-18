@@ -21,8 +21,10 @@ do
 {
     Console.Clear();
     Console.WriteLine("***********************");
-    Console.WriteLine("******WELCOME TO*******");
-    Console.WriteLine("*****MEAT N STUFF******");
+    Console.WriteLine("      WELCOME TO");
+    Console.WriteLine("     MEAT N STUFF");
+    Console.WriteLine("***********************");
+
     Console.WriteLine("\n");
     foreach (KeyValuePair<string, decimal> kvp in menu)
     {
@@ -41,9 +43,9 @@ do
     if (menu.ContainsKey(input))
     {
         cost1 = menu[input];
-        Console.WriteLine($"\nOK YOU'D LIKE {input},THE PRICE IS ${cost1}.");
         total = cost1 + total;
         shoppingList.Add(input);
+        Console.WriteLine($"\nOK YOU'D LIKE {input},THE PRICE IS ${cost1}.");
         Console.WriteLine("\nWOULD YOU LIKE SOMETHING ELSE? Y/N");
         loop1 = Console.ReadLine().ToUpper();
     }
